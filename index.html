@@ -8,30 +8,34 @@
 </head>
 <body>
     <header>
-    <div>
-        <ul>
-            <li>
-                <img src="/icons/phone.svg" alt="">+420 777 666 666
-            </li>
-            <li>
-                <img src="/icons/email.svg" alt="e-mail">
-                <span>obchod@l3web.cz</span>
-            </li>
-            <li>
+    <div class="header_top">
+        <section>
+            <div>
+                <div>
+                    <img src="/icons/phone.svg" alt="telefon">
+                    <a href="#">+420 777 666 666</a>
+                </div>
+                <div><!--čárka--></div>
+                <div>
+                    <img src="/icons/email.svg" alt="e-mail">
+                    <a href="#">obchod@l3web.cz</a>
+                </div>
+            </div>
+            <div>
                 <img src="/icons/profile.svg" alt="profil">
-                <span>Přihlášení</span>
-            </li>
-        </ul>
+                <a href="#">Přihlášení</a>
+            </div>
+        </section>
     </div>
-    <div>
+    <div class="header_bottom">
         <img src="logo/Logo5.svg" alt="Logoipsum logo">
         <nav>
-            <ul>
+            <menu>
                 <li><a href="#">Úvod</a></li>
                 <li><a href="#">Funkce</a></li>
                 <li><a href="#">Podpora</a></li>
                 <li><a href="#">Ceník</a></li>
-            </ul>
+            </menu>
         </nav>
         <p><a href="#">Zkušební verze</a></p>
     </div>
@@ -62,9 +66,10 @@
         </section>
 
 
-        <h2>Výhody řešení</h2>
         <section>
-            <div>
+            <h2>Výhody řešení</h2>
+
+            <div class="vyhody">
                 <img src="" alt="Ikona hodin">
                  <p>Zkracuje čas práce díky velkému množství funkcí</p>
             </div>
@@ -81,6 +86,7 @@
                 <p>Zaručuje splnění požadavků ISO a IATF</p>
             </div>
         </section>
+
         <section>
             <article>
                 <p>Administrace aplikace</p>
@@ -106,56 +112,54 @@
         <section>
             <div>
                 <h3>Jsme dva – Honza a Tomáš</h3>
-                <p>Jako každý jsme si i my dva prošli školním vzdělávacím systémem. Ve čtvrťáku jsme se rozhodli vytvořit aplikaci, která pomáhá shromažďovat školní data a vše je tak hezky pod kontrolou.</p>
+                <p>Jako každý jsme si i my dva prošli školním vzdělávacím systémem. Ve čtvrťáku jsme se rozhodli vytvořit aplikaci, která pomáhá shromažďovat firemní data a vše je tak hezky pod kontrolou.</p>
                 <a href="#">Přečíst celý příběh</a>
             </div>
             <img src="" alt="Honza a Tomáš Nejedlí">
         </section>
 
-        <h2>Napsali o nás</h2>
-        <section>
-            <div>
-                <img src="#" alt="">
-                <p></p>
-                <p>Michaela Komorousová</p>
-                <p>Personalistka, Magna Exteriors s.r.o.</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <p></p>
-                <p>Michaela Komorousová</p>
-                <p>Personalistka, Magna Exteriors s.r.o.</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <p></p>
-                <p>Alžběta Formánková</p>
-                <p>Personalistka, Magna Exteriors s.r.o.</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <p></p>
-                <p>Anna Suchánková</p>
-                <p>Personalistka, Magna Exteriors s.r.o.</p>
+        <section class="O-nas">
+            <h2>Napsali o nás</h2>
+            <div class="O-nas-list">
+                <div class="O-nas-list__item">
+                    <img src="#" alt="">
+                    <p></p>
+                    <p>Michaela Komorousová</p>
+                    <p>Personalistka, Magna Exteriors s.r.o.</p>
+                </div>
+                <div class="O-nas-list__item">
+                    <img src="#" alt="">
+                    <p></p>
+                    <p>Alžběta Formánková</p>
+                    <p>Personalistka, Magna Exteriors s.r.o.</p>
+                </div>
+                <div class="O-nas-list__item">
+                    <img src="#" alt="">
+                    <p></p>
+                    <p>Anna Suchánková</p>
+                    <p>Personalistka, Magna Exteriors s.r.o.</p>
+                </div>
             </div>
         </section>
 
-        <h2>Aktuality</h2>
-        <section>
-            <div>
+        <section class="Aktuality">
+            <h2>Aktuality</h2>
+            <article>
                 <img src="#" alt="">
                 <p>Přidán nový modul do administrace</p>
                 <p>Lorem ipsum dolor sit amet consect requm let ralon cor sesma.</p>
                 <p><a href="#">Přečíst celý článek</a></p>
-            </div>
-            <div>
+            </article>
+            <article>
                 <img src="#" alt="">
                 <p>Sleva na 3 pozice 20 %</p>
                 <p>V roce 2022 jsme si pro vás připravili slevu 20 % pro nové 3 pozice v naší aplikaci</p>
                 <p><a href="#">Přečíst celý článek</a></p>
-            </div>
+            </article>
         </section>
     </main>
+
+
     <footer>
         <dl>
             <dt>
@@ -165,16 +169,20 @@
             <dd>Masarykova 12345</dd>
             <dd>460 00 Liberec</dd>
             <dd>
-                <img src="#" alt="Telefon">
-                +420 777 666 666
+                <a>
+                    <img src="/icons/phone.svg" alt="Telefon">
+                    <p>+420 777 666 666</p>
+                </a>
             </dd>
             <dd>
-                <img src="#" alt="e-mail">
-                info@l3web.cz
+                <a>
+                    <img src="/icons/email.svg" alt="e-mail">
+                    <p>info@l3web.cz</p>
+                </a>
             </dd>
             <dd>
-                <img src="#" alt="YouTube">
-                <img src="#" alt="Instagram">
+                <a><img src="/icons/youtube.svg" alt="YouTube"></a>
+                <a><img src="/icons/linkedin.svg" alt="LinkedIn"></a>
             </dd>
         </dl>
 
@@ -197,7 +205,7 @@
 
         <dl>
             <dt>Menu</dt>
-            <dd>Úvod</dd>
+            <dd><a href="#">Úvod</a></dd>
             <dd><a href="#">Funkce</a></dd>
             <dd><a href="#">Podpora</a></dd>
             <dd><a href="#">Ceník</a></dd>
