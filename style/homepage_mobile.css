@@ -9,7 +9,11 @@
 
 a{
     text-decoration: none;
-    color: black;
+}
+
+.header_contact{
+    display: flex;
+    justify-content: space-between;
 }
 
 .hamburger {
@@ -85,15 +89,39 @@ a{
     transition: .4s;
 }
 
-input{
-    display: none;
+.button{
+    padding: .5em 1em;
+    display: flex;
+    background-color: #F5841F;
+    border-radius: 2em;
+    flex-wrap: wrap;
 }
 
-input:checked ~ .hamburger .nav_list {
-    transform: translate(0);
+.button > a{
+    color: white;
 }
-
 
 main{
-    padding-top: 50em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_uvod {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.main_uvod_img{
+    display: flex;
+    width: 50vw;
+
+}
+
+.main_uvod_img img{
+    width: 100%;
+    border-radius: 2em;
+}
+.list_logo {
+    display: flex;
 }
