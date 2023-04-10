@@ -14,6 +14,13 @@ a{
 .header_contact{
     display: flex;
     justify-content: space-between;
+    padding: 1em 5em;
+    background-color: #F5F5F5;
+}
+
+.header_contact_item{
+    display: flex;
+    height: fit-content;
 }
 
 .hamburger {
@@ -22,6 +29,8 @@ a{
     padding: 0 15%;
     height: 75px;
     line-height: 75px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .nav_title{
@@ -90,15 +99,17 @@ a{
 }
 
 .button{
-    padding: .5em 1em;
-    display: flex;
     background-color: #F5841F;
     border-radius: 2em;
-    flex-wrap: wrap;
+    padding: 2em;
+    width: fit-content;
+    color: white;
 }
 
 .button > a{
     color: white;
+    font-weight: 700;
+    padding: 1em;
 }
 
 main{
@@ -124,4 +135,63 @@ main{
 }
 .list_logo {
     display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 5em;
+}
+
+.main_vyhody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10em;
+    background-color: #F1F9FC;
+}
+
+.main_vyhody_list{
+    display: flex;
+}
+
+.main_pribeh{
+    padding: 2em;
+}
+
+.main_pribeh_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5em 10em;
+    gap: 5em
+    ;
+}
+
+.main_pribeh_content_img{
+    display: flex;
+    width: 50vw;
+}
+
+.main_pribeh_content img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.main_pribeh_content_text{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+
+
+
+footer{
+    background-color: #16213C;
+    color: #8ECAE6;
+    display: flex;
+    padding: 5em;
+    justify-content: space-between;
+}
+
+footer > a{
+    text-decoration: none;
 }
