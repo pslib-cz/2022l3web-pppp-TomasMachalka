@@ -20,8 +20,10 @@
                 <span>obchod@l3web.cz</span>
             </li>
             <li class="header_contact_item">
-                <img src="/icons/profile.svg" alt="profil">
-                <span>Přihlášení</span>
+                <a href="#">
+                    <img src="/icons/profile.svg" alt="profil">
+                    <span>Přihlášení</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -81,22 +83,23 @@
             <h2>Výhody řešení</h2>
             <section class="main_vyhody_list">
                 <div>
-                    <img src="" alt="Ikona hodin">
-                     <p>Zkracuje čas práce díky velkému množství funkcí</p>
+                    <img src="./icons/time.svg" alt="Ikona hodin">
+                     <p><span style="color:#F5841F">Zkracuje čas práce</span> díky velkému množství funkcí</p>
                 </div>
                 <div>
-                    <img src="" alt="Ikona zaměstnanců">
+                    <img src="./icons/people.svg" alt="Ikona zaměstnanců">
                     <p>Poskytuje selektivní přístup všem pracovníkům</p>
                 </div>
                 <div>
-                    <img src="" alt="Ikona komunikace">
+                    <img src="./icons/connection.svg" alt="Ikona komunikace">
                     <p>Umožňuje outsourcing personalistických procesů</p>
                 </div>
                 <div>
-                    <img src="" alt="Ikona úkolů">
+                    <img src="./icons/task.svg" alt="Ikona úkolů">
                     <p>Zaručuje splnění požadavků ISO a IATF</p>
                 </div>
             </section>
+
             <section>
                 <article>
                     <p>Administrace aplikace</p>
@@ -119,7 +122,7 @@
         </section>
 
 
-        <p class="main_pribeh">
+        <section class="main_pribeh">
             <h2>Příběh</h2>
             <section class="main_pribeh_content">
                 <div class="main_pribeh_content_text">
@@ -129,7 +132,7 @@
                 </div>
                 <div class="main_pribeh_content_img"><img src="/img/gentlemen-gaba87423a_1920.jpg" alt="Honza a Tomáš Nejedlí"></div>
             </section>
-        </p>
+        </section>
 
         <h2>Napsali o nás</h2>
         <section>
@@ -159,8 +162,9 @@
             </div>
         </section>
 
-        <h2>Aktuality</h2>
+
         <section>
+            <h2>Aktuality</h2>
             <div>
                 <img src="#" alt="">
                 <p>Přidán nový modul do administrace</p>
@@ -176,51 +180,59 @@
         </section>
     </main>
     <footer>
-        <dl>
-            <dt>
-                <img src="/logo/Logo5b_blue.svg" alt="Logo">
-            </dt>
-            <dd>Pslib.cz s.r.o.</dd>
-            <dd>Masarykova 12345</dd>
-            <dd>460 00 Liberec</dd>
-            <dd>
-                <img src="#" alt="Telefon">
-                +420 777 666 666
-            </dd>
-            <dd>
-                <img src="#" alt="e-mail">
-                info@l3web.cz
-            </dd>
-            <dd>
-                <img src="#" alt="YouTube">
-                <img src="#" alt="Instagram">
-            </dd>
-        </dl>
-
-        <dl>
-            <dt>Videotutoriály</dt>
-            <dd><a href="#">CSS</a></dd>
-            <dd><a href="#">Animace</a></dd>
-            <dd><a href="#">Stříhaní videa</a></dd>
-            <dd><a href="#">Výběr barev</a></dd>
-            <dd><a href="#">Plánování pracovníků a mezd</a></dd>
-            <dd><a href="#">Všechna videa</a></dd>
-        </dl>
-
-        <dl>
-            <dt>Podpora</dt>
-            <dd><a href="#">Přihlášení k účtu</a></dd>
-            <dd><a href="#">Školení</a></dd>
-            <dd><a href="#">FAQ - Časté dotazy</a></dd>
-        </dl>
-
-        <dl>
-            <dt>Menu</dt>
-            <dd>Úvod</dd>
-            <dd><a href="#">Funkce</a></dd>
-            <dd><a href="#">Podpora</a></dd>
-            <dd><a href="#">Ceník</a></dd>
-            <dd><a href="#">Kontakt</a></dd>
+        <section>
+            <dl>
+                <dt>
+                    <img src="/logo/Logo5b_blue.svg" alt="Logo">
+                </dt>
+                <dd>Pslib.cz s.r.o.</dd>
+                <dd>Masarykova 12345</dd>
+                <dd>460 00 Liberec</dd>
+                <dd>
+                    <img src="./icons/phone.svg" alt="Telefon">
+                    +420 777 666 666
+                </dd>
+                <dd>
+                    <img src="./icons/email.svg" alt="e-mail">
+                    info@l3web.cz
+                </dd>
+                <dd>
+                    <img src="./icons/youtube.svg" alt="YouTube">
+                    <img src="./icons/linkedin.svg" alt="LinkedIn">
+                </dd>
+            </dl>
+    
+            <dl>
+                <dt class="footer_titles">Videotutoriály</dt>
+                <dd><a href="#">CSS</a></dd>
+                <dd><a href="#">Animace</a></dd>
+                <dd><a href="#">Stříhaní videa</a></dd>
+                <dd><a href="#">Výběr barev</a></dd>
+                <dd><a href="#">Plánování pracovníků a mezd</a></dd>
+                <dd><a href="#">Všechna videa</a></dd>
+            </dl>
+    
+            <dl>
+                <dt class="footer_titles">Podpora</dt>
+                <dd><a href="#">Přihlášení k účtu</a></dd>
+                <dd><a href="#">Školení</a></dd>
+                <dd><a href="#">FAQ - Časté dotazy</a></dd>
+            </dl>
+    
+            <dl>
+                <dt class="footer_titles">Menu</dt>
+                <dd><a href="#">Úvod</a></dd>
+                <dd><a href="#">Funkce</a></dd>
+                <dd><a href="#">Podpora</a></dd>
+                <dd><a href="#">Ceník</a></dd>
+                <dd><a href="#">Kontakt</a></dd>
+            </dl>
+    
+        </section>
+        <hr>
+        <dl class="footer_credits">
+            <dd>© Copyright 2023 - Pslib.cz s.r.o.   |   <a href="#">Cookies</a>    |   <a href="#">Podmínky užití</a></dd>
+            <dd>Vyrobilo: B interactive</dd>
         </dl>
     </footer>
 </body>

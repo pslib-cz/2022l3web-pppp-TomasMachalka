@@ -150,10 +150,22 @@ main{
 
 .main_vyhody_list{
     display: flex;
+    padding: 5em;
 }
 
-.main_pribeh{
+.main_vyhody_list div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+    font-weight: 800;
+    color: #16213C;
+}
+
+.main_pribeh h2{
     padding: 2em;
+    text-align: center;
 }
 
 .main_pribeh_content{
@@ -161,8 +173,7 @@ main{
     flex-direction: row;
     align-items: center;
     padding: 5em 10em;
-    gap: 5em
-    ;
+    gap: 5em;
 }
 
 .main_pribeh_content_img{
@@ -182,16 +193,34 @@ main{
 }
 
 
-
-
 footer{
     background-color: #16213C;
     color: #8ECAE6;
-    display: flex;
     padding: 5em;
-    justify-content: space-between;
 }
 
-footer > a{
-    text-decoration: none;
+footer section{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.footer_credits{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+hr{
+    border:.1em solid #8ECAE625
+}
+
+.footer_titles{
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+footer dd a{
+    color: #8ECAE6;
 }
