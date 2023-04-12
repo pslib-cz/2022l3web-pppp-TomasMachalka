@@ -1,0 +1,144 @@
+.header_contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+    background-color: #F5F5F5;
+}
+
+.header_contact_item{
+    display: flex;
+    height: fit-content;
+}
+
+.hamburger {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 75px;
+    line-height: 75px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.nav_title{
+    display: flex;
+}
+
+.hamburger .nav_list{
+    display: flex;
+}
+
+.hamburger .nav_list .nav_item{
+    cursor: pointer;
+    height: 100%;
+    padding:  0 30px;
+    transition: .4s;
+}
+
+.hamburger .nav_list .nav_item:hover{
+    background: #F5841F;
+}
+
+.hamburger .nav_list .nav_link {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 800;
+}
+    
+    @media (max-width: 675px) {
+        .hamburger .nav_list{
+            display: grid;
+            position: absolute;
+            background: #F5F5F5;
+            width: 100%;
+            top: 75px;
+            text-align: center;
+            transform: translate(-115%);
+            z-index: -1;
+            transition: .6s;
+        }
+    
+        .hamburger .nav_list .nav_item {
+            padding: 35px;
+        }
+    
+        .hamburger .navbar-toggler {
+            display: grid !important;
+        }
+    
+    }
+
+
+
+.hamburger .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+.hamburger .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #F5841F;
+    border-radius: 10%;
+    transition: .4s;
+}
+
+.button{
+    background-color: #F5841F;
+    border-radius: 2em;
+    padding: 2em;
+    width: fit-content;
+    color: white;
+}
+
+.button > a{
+    color: white;
+    font-weight: 700;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #16213C;
+    color: #8ECAE6;
+    padding: 5em;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.footer_credits{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+hr{
+    border:.1em solid #8ECAE625
+}
+
+.footer_titles{
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+footer dd a{
+    color: #8ECAE6;
+}
