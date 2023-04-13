@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/funkce_mobile.css">
     <link rel="stylesheet" href="./style/header_footer.css">
+    <link rel="stylesheet" href="./style/hamburger.css">
     <title>Logo ipsum | Homepage</title>
 </head>
 <body>
@@ -32,23 +33,52 @@
     <section class="hamburger">
 
         <div class="nav_title">
-            <img src="logo/Logo5.svg" alt="Logoipsum logo">
+            <a href="./index.html"><img src="logo/Logo5.svg" alt="Logoipsum logo"></a>
         </div>
 
-        <label class="navbar-toggler" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
+        
 
-            <menu class="nav_list">
-                <li class="nav_item"><a class="nav_link" href="#">Úvod</a></li>
-                <li class="nav_item"><a class="nav_link" href="#">Funkce</a></li>
+            <menu class="navbar__menu nav_list">
+                <li class="nav_item"><a class="nav_link" href="./index.html">Úvod</a></li>
+                <li class="nav_item"><a class="nav_link" href="./funkce.html">Funkce</a></li>
                 <li class="nav_item"><a class="nav_link" href="#">Podpora</a></li>
                 <li class="nav_item"><a class="nav_link" href="#">Ceník</a></li>
+                <li class="nav_item"><a class="nav_link" href="#">Kontakt</a></li>
             </menu>
-        <p class="button"><a href="#">Zkušební verze</a></p>
+
+
+
+            <label class="navbar__hamburger" for="toggle">
+                <a class="hamburger-menu" href="javascript:void(0)">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </label>
+
+       <a class="button" href="#">Zkušební verze</a>
     </section>
+    
+
+
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        document.querySelector("body").onclick = (e) => {
+            const menus = document.querySelectorAll(".nav-list");
+            for (const menu of menus) {
+                menu.classList.add("navbar__menu--hidden");
+            }
+        }
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                event.stopPropagation()
+                const menus = document.querySelectorAll(".nav_list");
+                for (const menu of menus) {
+                    menu.classList.toggle("navbar__menu--hidden");
+                }
+            }
+        }
+    </script>
     </header>
 
     <main>
@@ -81,8 +111,8 @@
                     info@l3web.cz
                 </dd>
                 <dd>
-                    <img src="./icons/youtube.svg" alt="YouTube">
-                    <img src="./icons/linkedin.svg" alt="LinkedIn">
+                    <a href="#"><img src="./icons/youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="./icons/linkedin.svg" alt="LinkedIn"></a>
                 </dd>
             </dl>
     

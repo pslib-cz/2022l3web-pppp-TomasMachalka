@@ -18,15 +18,33 @@
     line-height: 75px;
     padding-top: 2em;
     padding-bottom: 2em;
+    align-items: center;
 }
 
 .nav_title{
     display: flex;
+    align-items: center;
 }
 
-.hamburger .nav_list{
+.nav_title a{
     display: flex;
+    align-items: center;
 }
+
+
+.hamburger .nav_list{
+    display: grid;
+    position: absolute;
+    background: #F5F5F5;
+    width: 100%;
+    top: 7em;
+    text-align: center;
+    transform: translate(-115%);
+    z-index: -1;
+    transition: .6s;
+}
+
+
 
 .hamburger .nav_list .nav_item{
     cursor: pointer;
@@ -44,40 +62,16 @@
     font-size: 17px;
     font-weight: 800;
 }
-    
-    @media (max-width: 675px) {
-        .hamburger .nav_list{
-            display: grid;
-            position: absolute;
-            background: #F5F5F5;
-            width: 100%;
-            top: 75px;
-            text-align: center;
-            transform: translate(-115%);
-            z-index: -1;
-            transition: .6s;
-        }
-    
-        .hamburger .nav_list .nav_item {
-            padding: 35px;
-        }
-    
-        .hamburger .navbar-toggler {
-            display: grid !important;
-        }
-    
-    }
 
-
-
-.hamburger .navbar-toggler {
+.hamburger .navbar .navbar__hamburger {
     display: none;
     height: min-content;
     margin: 18px -10px 0 0;
     cursor: pointer;
 }
 
-.hamburger .navbar-toggler .bar {
+.hamburger .navbar__hamburger .bar {
+    display: block;
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
@@ -86,21 +80,18 @@
     transition: .4s;
 }
 
+.navbar__menu.navbar__menu--hidden{
+    transform:translate(-15%)
+}
+
 .button{
     background-color: #F5841F;
-    border-radius: 2em;
-    padding: 2em;
-    width: fit-content;
-    color: white;
-}
-
-.button > a{
     color: white;
     font-weight: 700;
-    padding: 1em;
+    flex-shrink: 0;
+    padding: 0em 2em;
+    border-radius: 5em;
 }
-
-
 
 
 
@@ -118,7 +109,7 @@ footer{
 
 footer section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding-bottom: 2em;
 }
@@ -141,4 +132,29 @@ hr{
 
 footer dd a{
     color: #8ECAE6;
+}
+
+
+@media (min-width: 675px) {
+    
+    .hamburger .nav_list{
+        position: relative;
+        display: flex;
+        transform: translate(0);
+        top: 0em;
+        justify-content: center;
+        background: white;
+    }
+
+    .hamburger .navbar-toggler {
+        display: grid !important;
+    }
+
+    footer section{
+        flex-direction: row;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
 }

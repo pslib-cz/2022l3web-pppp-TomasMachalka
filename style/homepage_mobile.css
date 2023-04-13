@@ -20,12 +20,13 @@ main{
 .main_uvod {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 
 .main_uvod_img{
     display: flex;
     width: 50vw;
-
+    padding-bottom: 2em;
 }
 
 .main_uvod_img img{
@@ -36,15 +37,16 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 2em;
-    padding: 5em;
+    padding-bottom: 2em;
+    flex-wrap: wrap;
 }
 
 .main_vyhody{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10em;
     background-color: #F1F9FC;
+    padding: 10em;
 }
 
 .main_vyhody_list{
@@ -64,21 +66,27 @@ main{
     color: #16213C;
 }
 
+
+
+.main_pribeh{
+    padding: 0em 5em;
+}
+
+
 .main_pribeh h2{
     padding: 2em;
     text-align: center;
 }
 
+
 .main_pribeh_content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
-    padding: 5em 10em;
-    gap: 5em;
+    gap: 2em;
 }
 
 .main_pribeh_content_img{
-    display: flex;
     width: 50vw;
 }
 
@@ -86,6 +94,12 @@ main{
     width: 100%;
     border-radius: 2em;
 }
+
+.main_pribeh_content .button{
+    width: max-content;
+    padding: 2em 2em;
+}
+
 
 .main_pribeh_content_text{
     display: flex;
@@ -106,4 +120,38 @@ main{
 .main_napsali div div{
     display: flex;
     flex-direction: column;
+}
+
+.main_aktuality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 10em;
+    background-color: #F5F5F5;
+}
+
+.main_aktuality_content_item{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: start;
+    padding: 2em;
+}
+
+@media (min-width: 675px) {
+    .main_uvod{
+        flex-direction: row;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .main_vyhody_list{
+        flex-direction: row;
+        justify-content:space-between;
+        gap: 5em;
+    }
+
+    .main_pribeh_content{
+        flex-direction: row;
+    }
 }

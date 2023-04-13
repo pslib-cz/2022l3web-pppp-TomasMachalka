@@ -1,0 +1,28 @@
+
+
+
+@media (min-width: 675px) {
+    .navbar__hamburger{
+        display: none;
+    }
+}
+
+.hamburger {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+.hamburger-menu::after {
+    z-index: 1;
+}
