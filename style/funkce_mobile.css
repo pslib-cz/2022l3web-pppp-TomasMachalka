@@ -11,3 +11,13 @@ a{
     text-decoration: none;
 }
 
+.dot{
+    
+}
+
+.main_dotaz{
+    display: flex;
+    flex-direction: column;
+    padding: 10em;
+    align-items: center;
+}
