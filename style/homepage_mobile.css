@@ -23,6 +23,10 @@ main{
     align-items: center;
 }
 
+.main_uvod ul{
+    padding-bottom: 2em;
+}
+
 .main_uvod_img{
     display: flex;
     width: 50vw;
@@ -143,6 +147,10 @@ main{
     gap: 2em;
 }
 
+.main_napsali_content_item{
+    gap: 1em;
+}
+
 .main_napsali_content_item_img{
     width: 140px;
     height: 140px;
@@ -159,7 +167,6 @@ main{
     align-items: center;
     padding: 2em 10em;
     background-color: #F5F5F5;
-    width: 100%;
 }
 
 .main_aktuality_content_item{
