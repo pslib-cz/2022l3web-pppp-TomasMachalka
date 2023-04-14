@@ -36,10 +36,11 @@
 
 
 .button{
+    display: block;
+    width: fit-content;
     background-color: #F5841F;
     color: white;
     font-weight: 700;
-    flex-shrink: 0;
     padding: 0.7em 2em;
     border-radius: 5em;
 }
@@ -52,6 +53,8 @@
 
 
 .button_2{
+    display: block;
+    width: fit-content;
     background-color: #ffffff;
     color: black;
     font-weight: 700;
