@@ -34,53 +34,40 @@ main{
     padding-bottom: 4em;
 }
 
-.videotutorialy{
-    position: absolute;
-    right: 20%;
-    top: 15em;
-}
-
-.videotutorialy a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.videotutorialy a:hover{
-    color: #F5841F;
-}
-
-.main_articles{
+.main_people{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 1em;
-    padding: 2em;
     background-color: #F5F5F5;
     border-radius: 2em;
 }
 
-.main_articles_item{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.main_people_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    background-color: white;
     padding: 5%;
-    border-radius: .5em;
+    border-radius: 2em;
 }
 
+.main_people_item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .4s;
+}
 
 .main_dotaz{
     display: flex;
     flex-direction: column;
-    padding: 5em 0em;
+    gap: 2em;
     align-items: center;
-    gap: 1em;
+    padding: 2em;
 }
 
 @media (min-width: 675px) {
-    .main_articles{
-        display: grid;
+    .main_people{
         grid-template-columns: repeat(4, 1fr);
     }
-
-    .main_dotaz{
-        padding: 10em;
-    }
+    
 }

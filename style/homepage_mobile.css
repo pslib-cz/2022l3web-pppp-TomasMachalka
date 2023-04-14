@@ -19,8 +19,9 @@ main{
 
 .main_uvod {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction:column-reverse;
+    padding-bottom: 2em;
+    width: 80%;
 }
 
 .main_uvod ul{
