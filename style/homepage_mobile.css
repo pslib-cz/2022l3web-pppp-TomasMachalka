@@ -79,6 +79,7 @@ main{
 
 .main_articles{
     display: flex;
+    flex-direction: column;
     gap: 2em;
     padding: 2em;
 }
