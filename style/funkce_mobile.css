@@ -9,6 +9,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 main{
@@ -60,9 +61,15 @@ main{
 }
 
 .main_articles_item{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     padding: 5%;
     border-radius: .5em;
+    background-color: white;
+}
+
+.main_articles_item:hover{
+    transition: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
